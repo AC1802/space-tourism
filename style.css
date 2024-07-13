@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+
+:root {
+  --white: #ffffff;
+  --light-blue: #d0d6f9;
+  --very-dark-navy: #0b0d17;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("./assets/home/background-home-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+div.logo_container {
+  margin: 0 64px 0 64px;
+  flex: 1;
+}
+
+div.logo_container img {
+  width: 48px;
+  height: 48px;
+}
+
+div.line {
+  height: 1px;
+  width: calc(45% - 64px);
+  border-top: 1px solid var(--white);
+  opacity: 25%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 96px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+ul {
+  display: flex;
+  column-gap: 48px;
+  list-style: none;
+  position: relative;
+  /* left: ; */
+}
+
+ul li {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 37px 0 37px 0;
+}
+
+ul li:nth-child(1) {
+  border-bottom: 3px solid var(--white);
+}
+
+ul li span {
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+main {
+  height: 632px;
+  margin: 128px 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+section {
+  width: 50%;
+}
+
+h1,
+p.subtitle {
+  text-transform: uppercase;
+}
+
+p.subtitle {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4px;
+  height: 34px;
+  color: var(--light-blue);
+}
+
+h1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 144px;
+  color: var(--white);
+  margin: 24px 0;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--white);
+}
+
+button {
+  height: 272px;
+  width: 272px;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  background-color: var(--white);
+  color: var(--very-dark-navy);
+  border-radius: 50%;
+  border: none;
+  text-transform: uppercase;
+}
