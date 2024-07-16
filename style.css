@@ -22,12 +22,12 @@ header {
   margin-top: 40px;
 }
 
-div.logo_container {
+div.logo-container {
   margin: 0 64px 0 64px;
   flex: 1;
 }
 
-div.logo_container img {
+div.logo-container img {
   width: 48px;
   height: 48px;
 }
@@ -37,7 +37,7 @@ div.line {
   width: calc(45% - 64px);
   border-top: 1px solid var(--white);
   opacity: 25%;
-  z-index: 1000;
+  z-index: 2;
 }
 
 nav {
@@ -48,7 +48,7 @@ nav {
   height: 96px;
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  z-index: -1;
+  z-index: 1;
 }
 
 ul {
@@ -68,6 +68,12 @@ ul li {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 37px 0 37px 0;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 ul li:nth-child(1) {
