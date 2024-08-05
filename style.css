@@ -143,4 +143,5 @@ button {
   border-radius: 50%;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
