@@ -178,3 +178,8 @@ section.left nav div:nth-child(1) {
 section.right {
   margin-right: 165px;
 }
+
+section.right img {
+  max-width: 540px;
+  height: 676px;
+}
