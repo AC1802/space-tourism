@@ -100,9 +100,24 @@ h1 span {
 
 main {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 100px;
+  margin-top: 157px;
+}
+
+.planet-image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 200px;
+}
+
+.container {
+  padding-right: 200px;
+  width: 50%;
 }
 
 div img.planet-image {
@@ -119,6 +134,8 @@ nav.planet-nav {
 
 nav.planet-nav ul.planet-list {
   column-gap: 32px;
+  padding-left: 0;
+  margin: 0;
 }
 
 nav.planet-nav ul li {
@@ -140,6 +157,8 @@ h2.planet-name {
   font-style: normal;
   font-size: 96px;
   color: var(--white);
+  text-transform: uppercase;
+  margin: 0;
 }
 
 p.planet-description {
@@ -157,11 +176,13 @@ section.text-section {
 
 section.data-section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
   gap: 32px;
 }
 
-section.data-section div {
+.data-section div {
+  width: 50%;
 }
 
 h3 {
@@ -174,10 +195,12 @@ h3 {
   color: var(--light-blue);
 }
 
-h3 > p {
+.planet-distance,
+.planet-time {
   font-family: "Bellefair", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 28px;
   color: var(--white);
+  text-transform: uppercase;
 }
