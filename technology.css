@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+
+:root {
+  --white: #ffffff;
+  --light-blue: #d0d6f9;
+  --very-dark-navy: #0b0d17;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("./assets/technology/background-technology-desktop.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+div.logo-container {
+  margin: 0 64px 0 64px;
+  flex: 1;
+}
+
+div.logo-container img {
+  width: 48px;
+  height: 48px;
+}
+
+div.line {
+  height: 1px;
+  width: calc(45% - 64px);
+  border-top: 1px solid var(--white);
+  opacity: 25%;
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 96px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  column-gap: 48px;
+  list-style: none;
+  position: relative;
+  /* left: ; */
+}
+
+ul li {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 37px 0 37px 0;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul li:nth-child(4) {
+  border-bottom: 3px solid var(--white);
+}
+
+ul li span {
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 48px 0 24px 165px;
+}
+
+h1 span {
+  font-weight: 700;
+  opacity: 25%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 165px;
+  height: 734px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+main nav {
+  display: block;
+  background-color: transparent;
+  backdrop-filter: blur(0);
+  width: initial;
+  height: 304px;
+}
+
+main nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+main nav ul li {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: var(--white);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main nav ul li:nth-child(1) {
+  color: var(--very-dark-navy);
+  background-color: var(--white);
+}
+
+section p:first-child {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: var(--white);
+  opacity: 50%;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+}
+
+.technology_name {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.technology_description {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--light-blue);
+}
