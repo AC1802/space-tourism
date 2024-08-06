@@ -12,8 +12,9 @@ body {
   height: 100vh;
   background-image: url("./assets/technology/background-technology-desktop.jpg");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 header {

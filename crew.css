@@ -14,6 +14,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 header {
@@ -119,6 +120,9 @@ section.right {
 
 section.left {
   margin-left: 165px;
+  height: 734px;
+  display: flex;
+  gap: 237px;
 }
 
 .crew_role {
@@ -158,6 +162,7 @@ section.left nav {
   background-color: transparent;
   backdrop-filter: blur(0);
   width: initial;
+  height: 15px;
 }
 
 section.left nav div {
@@ -177,9 +182,14 @@ section.left nav div:nth-child(1) {
 
 section.right {
   margin-right: 165px;
+  height: 734px;
 }
 
-section.right img {
-  max-width: 540px;
-  height: 676px;
+.crew_image {
+  background-image: url("assets/crew/image-douglas-hurley.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 539px;
+  max-height: 734px;
+  height: 100%;
 }

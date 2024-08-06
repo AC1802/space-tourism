@@ -14,6 +14,10 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
@@ -89,8 +93,10 @@ main {
   height: 632px;
   margin: 128px 165px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: end;
+  gap: 298px;
+  max-width: 1440px;
 }
 
 section {
